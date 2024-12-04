@@ -1,0 +1,94 @@
+/* Falling Squares Loader CSS */
+
+.loader {
+  margin-top: 100px;
+}
+
+
+.square-loader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+}
+
+.square {
+  width: 30px;
+  height: 250px;
+  border-radius: 15px;
+  animation: fall 1.5s ease-in-out infinite;
+}
+
+.square:nth-child(1) {
+  animation-delay: 0s;
+  background-color: #3498db;
+}
+
+.square:nth-child(2) {
+  animation-delay: 0.1s;
+  background-color: #be1212;
+}
+
+.square:nth-child(3) {
+  animation-delay: 0.2s;
+  background-color: #d534db;
+}
+
+.square:nth-child(4) {
+  animation-delay: 0.3s;
+  background-color: #6551c5;
+}
+.square:nth-child(5) {
+  animation-delay: 0.4s;
+  background-color: #b4b71a;
+}
+.square:nth-child(6) {
+  animation-delay: 0.5s;
+  background-color: #10bdb8;
+}
+.square:nth-child(7) {
+  animation-delay: 0.6s;
+  background-color: #fdb312;
+}
+.square:nth-child(8) {
+  animation-delay: 0.7s;
+  background-color: #4b1f1f;
+}
+.square:nth-child(9) {
+  animation-delay: 0.8s;
+  background-color: #bcdb34;
+}
+.square:nth-child(10) {
+  animation-delay: 0.9s;
+  background-color: #58602b;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+.loader::after {
+  content: " ";
+  display: none;
+  width: 2em;
+  height: 2em;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  z-index: 100;
+  box-sizing: border-box;
+  margin: 1px;
+  border-radius: 50%;
+  border-color: rgb(170, 170, 170) transparent;
+  animation: 1.2s linear 0s infinite normal none running loader;
+  border-width: 0.2em;
+  border-style: solid;
+}

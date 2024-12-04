@@ -1,0 +1,42 @@
+.prod-details{
+    display: flex ;
+    width: 100%;
+    padding: 40px 100px;
+    
+}
+.prod-details .left-dt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prod-details .left-dt img{
+    width: 80%;
+    height: 80%;
+
+}
+.prod-details .right-dt{
+    width: 100%;
+    padding: 120px 20px;
+}
+.prod-details .right-dt .price{
+    font-size: 75px;
+    font-weight: bolder;
+}
+.prod-details .right-dt .tat{
+    font-family: emoji;
+    font-size: x-large;
+    font-weight: 800;
+}
+.backbutton{
+    margin: 90px;
+    border: 5px solid rgb(0, 255, 225);
+    border-radius: 42px;
+    padding: 0px 28px;
+    position: fixed;
+}
+.backbutton span{
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(0, 255, 225);
+}

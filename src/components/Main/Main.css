@@ -1,0 +1,38 @@
+.main-prods{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    display: grid;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    margin-top: 50px;
+    padding: 75px 100px 0px 100px;
+}
+
+.main-prods img{
+    width: 15rem;
+    height: 12rem;
+}
+
+.main-prods .prod-cards{
+    padding: 0.5rem;
+    border-width: 1px;
+    --tw-border-spacing-x: 0.25rem;
+    --tw-border-spacing-y: 0.25rem;
+    border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+    box-sizing: border-box;
+    border-color: #e5e7eb;
+    padding: 1.25rem;
+    margin-top: 0.75rem;
+    margin: 1.45rem;
+    border-radius: 7px;
+    height: 340px;
+}
+.main-prods .prod-cards .price{
+   font-weight: bolder;
+   font-size: larger;
+   
+}
+.main-prods .prod-cards img{
+    padding: 15px 15px
+}
